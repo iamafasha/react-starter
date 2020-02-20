@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "clean": "rm dist/bundle.js",
-    "start": "parcel public/index.html",
+    "start": "parcel public/index.html --host 127.0.0.1 --port 8080",
     "build-prod": "parcel build public/index.html"
   },
   "dependencies": {
@@ -16,10 +16,11 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
     "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1"
   }
 }
