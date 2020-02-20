@@ -3,6 +3,5 @@ import ReactDOM from "react-dom";
 import App from "./components/App";
 import "./styles.scss";
 
-
-var mountNode = document.getElementById("app");
+var mountNode = document.querySelector("#app");
 ReactDOM.render(<App name="Jane" />, mountNode);
